@@ -298,4 +298,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.gapless.enabled=false \
     ro.opengles.version=196608
 
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+	otaupdater.otaid=liquidm8
+
 $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)

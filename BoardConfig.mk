@@ -20,10 +20,6 @@
 # definition file).
 #
 
-# WARNING: This line must come *before* including the proprietary
-# variant, so that it gets overwritten by the parent (which goes
-# against the traditional rules of inheritance).
-
 # inherit from common msm8974
 -include device/htc/m8/BoardConfigCommon.mk
 
