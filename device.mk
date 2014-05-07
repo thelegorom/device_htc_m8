@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libdashplayer
 
+# Pnpmgr
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/pnp.xml:system/etc/pnp.xml
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
@@ -185,6 +189,10 @@ PRODUCT_PACKAGES += \
 # QCOM rngd
 PRODUCT_PACKAGES += \
     qrngd
+
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
 # Torch
 PRODUCT_PACKAGES += \
