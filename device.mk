@@ -243,6 +243,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Torch
 
+# Variant linking script
+PRODUCT_PACKAGES += \
+    makelinks.sh
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
@@ -301,5 +305,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OTA ID
 PRODUCT_PROPERTY_OVERRIDES += \
 	otaupdater.otaid=liquidm8
-
-$(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
